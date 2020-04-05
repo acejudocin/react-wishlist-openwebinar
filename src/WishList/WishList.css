@@ -1,0 +1,23 @@
+.wish-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wish-list__item {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.wish-list__item>*+* {
+    margin-left: 1rem;
+}
+
+.wish-list__item input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.wish-list__item--done label {
+    text-decoration: line-through;
+}

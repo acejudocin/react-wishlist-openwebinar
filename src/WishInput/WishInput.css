@@ -1,0 +1,17 @@
+.wish-input {
+    border: 0;
+    border-bottom: 3px dashed grey;
+    padding: 0;
+}
+
+.wish-input__label {
+    font-weight: 700;
+}
+
+.wish-input__field {
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
