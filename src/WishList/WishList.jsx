@@ -1,5 +1,4 @@
 import React from 'react';
-import className from 'classnames';
 import './WishList.css';
 import WishItem from '../WishItem/WishItem'
 

@@ -21,3 +21,11 @@
 .wish-list__item--done label {
     text-decoration: line-through;
 }
+
+.wish-list__item--warning label {
+    color: orange;
+}
+
+.wish-list__item--danger label {
+    color: red;
+}
