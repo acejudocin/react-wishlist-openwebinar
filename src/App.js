@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 
 
 const wishes = [
@@ -6,16 +7,10 @@ const wishes = [
     { text: 'Pay the gym', done: true },
     { text: 'Go to the gym', done: false },
 ];
-let newWish = '';
-
-const addWishToList = () => {
-    wishes.add(newWish);
-    this.newWish = '';
-}
 
 const App = () =>
-    <div>
-        <h1>My wishlist</h1>
+    <div className="body">
+        <h1 className="title">My wishlist</h1>
         <input placeholder="Enter your wish" />
         <ul>
             {wishes.map(({ text, done }, i) => (
@@ -27,7 +22,7 @@ const App = () =>
                 </li>
             ))}
         </ul>
-        <button onClick="addWishToList()">Add wish</button>
+        <button>Add wish</button>
     </div>
 
 export default App;

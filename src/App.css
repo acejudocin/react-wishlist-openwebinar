@@ -1,0 +1,10 @@
+.body {
+    border: 1px solid; 
+    width: fit-content;
+    margin: auto;
+    padding: 2rem;
+}
+
+.title {
+    color: darkblue;
+}
