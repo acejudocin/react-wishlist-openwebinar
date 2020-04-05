@@ -1,19 +1,16 @@
 import React from 'react';
-import classNames from 'classnames';
+import className from 'classnames';
 import './WishList.css';
+import WishItem from '../WishItem/WishItem'
 
-const WishList = ({ wishes }) => (
+const WishList = ({ wishes, onWishesChange }) => (
     <ul className="wish-list">
       {wishes.map(({ done, text }, i) => (
-        <li
-          key={text}
-          className={classNames('wish-list__item', {
-            'wish-list__item--done': done,
-          })}
-        >
-          <input id={`wish${i}`} type="checkbox" checked={done} />
-          <label htmlFor={`wish${i}`}>{text}</label>
-        </li>
+        <WishItem text={text} done={done} id={`wish${i}`} key={text} onDoneChange={(value) => {
+          const updatedWishes = [...wishes];
+          updatedWishes[i].done = value;
+          onWishesChange(updatedWishes);
+        }}/>
       ))}
     </ul>
 );
